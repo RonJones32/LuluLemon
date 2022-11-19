@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A54BE6132929454300BAF3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6122929454300BAF3A0 /* AppDelegate.swift */; };
-		A54BE6152929454300BAF3A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6142929454300BAF3A0 /* SceneDelegate.swift */; };
-		A54BE6172929454300BAF3A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6162929454300BAF3A0 /* ViewController.swift */; };
-		A54BE61A2929454300BAF3A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54BE6182929454300BAF3A0 /* Main.storyboard */; };
 		A54BE61D2929454300BAF3A0 /* LuluLemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A54BE61B2929454300BAF3A0 /* LuluLemon.xcdatamodeld */; };
 		A54BE61F2929454D00BAF3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54BE61E2929454D00BAF3A0 /* Assets.xcassets */; };
 		A54BE6222929454D00BAF3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54BE6202929454D00BAF3A0 /* LaunchScreen.storyboard */; };
 		A54BE62D2929454D00BAF3A0 /* LuluLemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE62C2929454D00BAF3A0 /* LuluLemonTests.swift */; };
 		A54BE6372929454D00BAF3A0 /* LuluLemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6362929454D00BAF3A0 /* LuluLemonUITests.swift */; };
 		A54BE6392929454D00BAF3A0 /* LuluLemonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6382929454D00BAF3A0 /* LuluLemonUITestsLaunchTests.swift */; };
+		A54BE6472929470700BAF3A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6452929470700BAF3A0 /* HomeViewController.swift */; };
+		A54BE6482929470700BAF3A0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54BE6462929470700BAF3A0 /* HomeViewController.xib */; };
+		A54BE64B2929472000BAF3A0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE6492929472000BAF3A0 /* InfoViewController.swift */; };
+		A54BE64C2929472000BAF3A0 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54BE64A2929472000BAF3A0 /* InfoViewController.xib */; };
+		A54BE64F29294A6F00BAF3A0 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BE64D29294A6F00BAF3A0 /* ItemTableViewCell.swift */; };
+		A54BE65029294A6F00BAF3A0 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54BE64E29294A6F00BAF3A0 /* ItemTableViewCell.xib */; };
+		A5767A05292957C900054A43 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5767A04292957C800054A43 /* item.swift */; };
+		A5767A0A292960AA00054A43 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5767A09292960A900054A43 /* CoreDataStack.swift */; };
+		A5767A0D2929622A00054A43 /* Garment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5767A0B2929622A00054A43 /* Garment+CoreDataClass.swift */; };
+		A5767A0E2929622A00054A43 /* Garment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5767A0C2929622A00054A43 /* Garment+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +46,6 @@
 /* Begin PBXFileReference section */
 		A54BE60F2929454300BAF3A0 /* LuluLemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuluLemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54BE6122929454300BAF3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A54BE6142929454300BAF3A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A54BE6162929454300BAF3A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A54BE6192929454300BAF3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A54BE61C2929454300BAF3A0 /* LuluLemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LuluLemon.xcdatamodel; sourceTree = "<group>"; };
 		A54BE61E2929454D00BAF3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54BE6212929454D00BAF3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,16 @@
 		A54BE6322929454D00BAF3A0 /* LuluLemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuluLemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54BE6362929454D00BAF3A0 /* LuluLemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuluLemonUITests.swift; sourceTree = "<group>"; };
 		A54BE6382929454D00BAF3A0 /* LuluLemonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuluLemonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A54BE6452929470700BAF3A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A54BE6462929470700BAF3A0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A54BE6492929472000BAF3A0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A54BE64A2929472000BAF3A0 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		A54BE64D29294A6F00BAF3A0 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		A54BE64E29294A6F00BAF3A0 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		A5767A04292957C800054A43 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		A5767A09292960A900054A43 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A5767A0B2929622A00054A43 /* Garment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Garment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A5767A0C2929622A00054A43 /* Garment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Garment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +116,14 @@
 			isa = PBXGroup;
 			children = (
 				A54BE6122929454300BAF3A0 /* AppDelegate.swift */,
-				A54BE6142929454300BAF3A0 /* SceneDelegate.swift */,
-				A54BE6162929454300BAF3A0 /* ViewController.swift */,
-				A54BE6182929454300BAF3A0 /* Main.storyboard */,
+				A54BE6452929470700BAF3A0 /* HomeViewController.swift */,
+				A54BE6462929470700BAF3A0 /* HomeViewController.xib */,
+				A54BE64D29294A6F00BAF3A0 /* ItemTableViewCell.swift */,
+				A54BE64E29294A6F00BAF3A0 /* ItemTableViewCell.xib */,
+				A54BE6492929472000BAF3A0 /* InfoViewController.swift */,
+				A54BE64A2929472000BAF3A0 /* InfoViewController.xib */,
+				A5767A04292957C800054A43 /* item.swift */,
+				A5767A0F2929623800054A43 /* CoreData */,
 				A54BE61E2929454D00BAF3A0 /* Assets.xcassets */,
 				A54BE6202929454D00BAF3A0 /* LaunchScreen.storyboard */,
 				A54BE6232929454D00BAF3A0 /* Info.plist */,
@@ -128,6 +147,16 @@
 				A54BE6382929454D00BAF3A0 /* LuluLemonUITestsLaunchTests.swift */,
 			);
 			path = LuluLemonUITests;
+			sourceTree = "<group>";
+		};
+		A5767A0F2929623800054A43 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A5767A09292960A900054A43 /* CoreDataStack.swift */,
+				A5767A0B2929622A00054A43 /* Garment+CoreDataClass.swift */,
+				A5767A0C2929622A00054A43 /* Garment+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A54BE6222929454D00BAF3A0 /* LaunchScreen.storyboard in Resources */,
+				A54BE65029294A6F00BAF3A0 /* ItemTableViewCell.xib in Resources */,
 				A54BE61F2929454D00BAF3A0 /* Assets.xcassets in Resources */,
-				A54BE61A2929454300BAF3A0 /* Main.storyboard in Resources */,
+				A54BE64C2929472000BAF3A0 /* InfoViewController.xib in Resources */,
+				A54BE6482929470700BAF3A0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54BE6172929454300BAF3A0 /* ViewController.swift in Sources */,
+				A5767A0D2929622A00054A43 /* Garment+CoreDataClass.swift in Sources */,
+				A5767A0A292960AA00054A43 /* CoreDataStack.swift in Sources */,
+				A54BE64F29294A6F00BAF3A0 /* ItemTableViewCell.swift in Sources */,
 				A54BE6132929454300BAF3A0 /* AppDelegate.swift in Sources */,
-				A54BE6152929454300BAF3A0 /* SceneDelegate.swift in Sources */,
 				A54BE61D2929454300BAF3A0 /* LuluLemon.xcdatamodeld in Sources */,
+				A54BE64B2929472000BAF3A0 /* InfoViewController.swift in Sources */,
+				A5767A05292957C900054A43 /* item.swift in Sources */,
+				A5767A0E2929622A00054A43 /* Garment+CoreDataProperties.swift in Sources */,
+				A54BE6472929470700BAF3A0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A54BE6182929454300BAF3A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A54BE6192929454300BAF3A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A54BE6202929454D00BAF3A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +474,6 @@
 				INFOPLIST_FILE = LuluLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +501,6 @@
 				INFOPLIST_FILE = LuluLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

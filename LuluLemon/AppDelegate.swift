@@ -8,28 +8,41 @@
 import UIKit
 import CoreData
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate, UINavigationControllerDelegate {
 
+    var window: UIWindow?
+    let navigationController = UINavigationController()
+    
+    lazy var coreDataStack: CoreDataStack = .init(modelName: "LuluLemon")
 
+        static let sharedAppDelegate: AppDelegate = {
+            guard let delegate = UIApplication.shared.delegate as? AppDelegate else {
+                fatalError("Unexpected app delegate type? \(String(describing: UIApplication.shared.delegate))")
+            }
+            return delegate
+        }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        navigationController.delegate = self
+        self.window = UIWindow( frame: UIScreen.main.bounds)
+        
+        let home = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let info = InfoViewController(nibName: "InfoViewController", bundle: nil)
+        
+        navigationController.viewControllers = [home, info]
+        
+        self.window!.rootViewController = UINavigationController(rootViewController: home)
+        
+        self.window!.makeKeyAndVisible()
+        
         return true
+        
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
     }
 
     // MARK: - Core Data stack

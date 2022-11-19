@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="LuluLemon" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentedControl" destination="nDo-lJ-OaM" id="GYr-MD-pj1"/>
+                <outlet property="tableView" destination="Obx-LR-WLH" id="JID-nN-Yim"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1y-Uo-lcB">
+                    <rect key="frame" x="188.5" y="44" width="37" height="26.5"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbr-L5-BSl">
+                    <rect key="frame" x="354" y="37.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="lFh-eN-HGv"/>
+                        <constraint firstAttribute="height" constant="40" id="v3z-do-6yz"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system"/>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="c2v-08-3PQ"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nDo-lJ-OaM">
+                    <rect key="frame" x="0.0" y="110.5" width="414" height="32"/>
+                    <segments>
+                        <segment title="Alpha"/>
+                        <segment title="Creation Time"/>
+                    </segments>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Obx-LR-WLH">
+                    <rect key="frame" x="0.0" y="141.5" width="414" height="720.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-se-vUP">
+                    <rect key="frame" x="0.0" y="108.5" width="414" height="2"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="f2U-ha-0gd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Obx-LR-WLH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8u9-A5-Z0l"/>
+                <constraint firstItem="nDo-lJ-OaM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="A3t-19-mZE"/>
+                <constraint firstItem="nDo-lJ-OaM" firstAttribute="top" secondItem="U1y-Uo-lcB" secondAttribute="bottom" constant="40" id="Gbw-VL-2LR"/>
+                <constraint firstItem="nDo-lJ-OaM" firstAttribute="top" secondItem="tH4-se-vUP" secondAttribute="bottom" id="I1i-5t-Op6"/>
+                <constraint firstItem="Obx-LR-WLH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ick-Tx-AXN"/>
+                <constraint firstItem="Obx-LR-WLH" firstAttribute="top" secondItem="nDo-lJ-OaM" secondAttribute="bottom" id="OIj-of-t1j"/>
+                <constraint firstItem="U1y-Uo-lcB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V8a-yQ-aFz"/>
+                <constraint firstItem="U1y-Uo-lcB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="d6p-ex-bEV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tH4-se-vUP" secondAttribute="trailing" id="hos-4s-x9A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nDo-lJ-OaM" secondAttribute="trailing" id="i6U-3j-lfY"/>
+                <constraint firstItem="tH4-se-vUP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pIh-Zm-lwF"/>
+                <constraint firstItem="Obx-LR-WLH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="rNF-GG-r39"/>
+                <constraint firstItem="tbr-L5-BSl" firstAttribute="centerY" secondItem="U1y-Uo-lcB" secondAttribute="centerY" id="sVE-HR-12h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tbr-L5-BSl" secondAttribute="trailing" constant="20" id="xwL-Ao-xCf"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
