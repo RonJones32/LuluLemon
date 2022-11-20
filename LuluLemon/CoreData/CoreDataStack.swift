@@ -16,6 +16,11 @@ class CoreDataStack {
 
     private lazy var storeContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: self.modelName)
+        
+        let description = NSPersistentStoreDescription()
+          description.url = URL(fileURLWithPath: "/dev/null")
+          container.persistentStoreDescriptions = [description]
+        
         container.loadPersistentStores { _, error in
             if let error = error as NSError? {
                 print("Unresolved error \(error), \(error.userInfo)")
